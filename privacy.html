@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GooCalendar의 구글캘린더 데이터 접근, 이용, 기기 내 저장, 삭제 및 권한 철회 방법을 안내합니다.">
+  <meta name="color-scheme" content="light">
+  <title>개인정보처리방침 — GooCalendar</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#fafafb;color:#414954;font:16px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Malgun Gothic",sans-serif}a{color:#8a625b;text-underline-offset:4px}a:focus-visible{outline:3px solid #d7978c;outline-offset:5px}header,main,footer{width:min(800px,100% - 40px);margin:auto}header{padding:27px 0;border-bottom:1px solid #e6e8ec}.brand{font-size:21px;font-weight:650;letter-spacing:-.6px;text-decoration:none;color:#343940}.brand:before{content:"";display:inline-block;width:10px;height:10px;background:#df8b7f;border-radius:50%;margin-right:10px}main{padding:43px 0 52px}h1{font-size:clamp(27px,5vw,34px);letter-spacing:-1px;margin:0 0 6px;font-weight:650}h2{font-size:19px;letter-spacing:-.3px;font-weight:600;color:#38414e;margin:32px 0 9px}p{margin:9px 0}ul,ol{padding-left:23px;margin:10px 0}li{padding:3px 0}.date{font-size:13px;color:#8a929d;margin-bottom:24px}.lead{padding:20px 23px;border:1px solid #e7e9ed;background:#fff;border-radius:12px}.scope{overflow-wrap:anywhere;font-size:14px;padding:13px 16px;background:#eef0f3;border-radius:8px}.subtle{color:#7d8794;font-size:14px}footer{padding:22px 0 30px;border-top:1px solid #e6e8ec;font-size:13px;color:#8a929d}@media(max-width:480px){header,main,footer{width:calc(100% - 32px)}main{padding-top:32px}.lead{padding:17px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">GooCalendar</a></header>
+  <main>
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일·최종 수정일: 2026년 10월 29일</p>
+    <p class="lead">GooCalendar의 개발·운영자 narangsh2는 구글캘린더 일정을 날짜별로 조회하고 오프라인에서 마지막 저장본을 확인할 수 있도록 앱을 제공합니다. 이 방침은 앱이 어떤 데이터에 접근하고, 어떻게 사용·저장하며, 사용자가 삭제하거나 권한을 철회할 수 있는지 설명합니다.</p>
+
+    <h2>1. 접근하는 데이터와 권한</h2>
+    <p>사용자가 구글 계정을 선택하고 동의한 경우, Google Calendar API를 통해 다음 정보에 접근합니다.</p>
+    <ul><li>사용자가 접근할 수 있는 캘린더의 식별자·이름·색상 및 기본 캘린더 여부</li><li>기본 캘린더 식별자에 포함될 수 있는 계정 이메일 주소</li><li>조회 기간에 해당하는 일정의 식별자·제목·시작 및 종료 시간·종일 여부·장소·설명</li></ul>
+    <p>요청하는 구글 권한은 다음과 같습니다.</p>
+    <p class="scope">https://www.googleapis.com/auth/calendar.readonly</p>
+    <p>이 권한은 캘린더와 일정을 읽기 위한 권한입니다. 앱은 구글캘린더에 일정을 생성·수정·삭제하지 않습니다. 구글 비밀번호는 앱이나 개발자에게 전달되지 않으며, 인증·권한 동의는 Google의 기능을 통해 진행합니다.</p>
+
+    <h2>2. 이용 목적</h2>
+    <ul><li>날짜와 시간에 따른 일정 목록 표시</li><li>표시할 캘린더 선택, 일정 검색, 기간 선택과 과거 일정 조회</li><li>일정의 시간·장소·설명 표시</li><li>인터넷 연결이 없거나 조회에 실패한 경우 마지막 저장 일정 표시</li><li>연결 계정과 마지막 저장 시각의 확인</li></ul>
+
+    <h2>3. 저장 위치와 보관 기간</h2>
+    <p>마지막으로 정상 조회한 캘린더 목록과 일정, 계정 식별자, 조회 기간, 저장 시각은 휴대폰의 앱 전용 내부 저장소에 저장합니다. 표시할 캘린더에 대한 선택도 기기 안에 저장합니다. 새 조회를 모두 완료한 경우 저장본을 교체하며, 조회에 실패하면 이전 저장본을 유지합니다.</p>
+    <p>저장 데이터는 새 조회로 교체되거나 사용자가 앱의 삭제 기능·Android 앱 데이터 삭제·앱 제거를 실행할 때까지 보관됩니다. 앱의 자동 백업과 기기 간 데이터 전송에서 해당 데이터를 제외하도록 설정되어 있습니다.</p>
+    <p>앱이 직접 받는 접근 토큰은 API 요청을 위해 실행 중 메모리에서 사용하며 앱 파일에 기록하지 않습니다. Google Play 서비스는 자체 정책과 보안 기능에 따라 인증 정보·토큰을 관리할 수 있습니다.</p>
+
+    <h2>4. 데이터 전송과 공유</h2>
+    <p>앱은 구글 계정 권한 승인과 일정 조회를 위해 Google 서비스와 HTTPS로 통신합니다. 개발자는 캘린더 데이터를 수집하는 별도 운영 서버를 두지 않으며, 앱이 읽은 일정과 계정 식별자를 개발자의 서버로 전송하지 않습니다.</p>
+    <p>앱에는 광고나 사용 분석 도구가 없으며, 일정 데이터를 판매하거나 광고·마케팅 또는 AI 모델 학습을 위해 제공하지 않습니다. 각 사용자의 저장 일정은 각자의 기기에서 관리됩니다.</p>
+    <p>GooCalendar에서 Google API를 통해 받은 정보의 사용 및 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>과 그 제한된 사용(Limited Use) 요건을 준수합니다.</p>
+
+    <h2>5. 저장 데이터 삭제 및 권한 철회</h2>
+    <ol><li><strong>기기 내 데이터 삭제:</strong> 앱의 연결 관리에서 ‘연결 정보와 저장 일정 지우기’를 선택합니다. Android 설정에서 앱 데이터를 삭제하거나 앱을 제거할 수도 있습니다.</li><li><strong>구글 접근 권한 철회:</strong> <a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 앱 및 서비스 관리</a>에서 GooCalendar 또는 최초 등록한 앱 이름을 찾아 연결을 삭제합니다.</li></ol>
+    <p>기기 저장 데이터 삭제와 구글 권한 철회는 별개입니다. 권한을 철회하더라도 이미 기기에 저장된 목록을 지우려면 위 데이터 삭제 기능을 함께 실행해주세요. 이 과정은 구글캘린더 원본 일정을 삭제하지 않습니다.</p>
+
+    <h2>6. 홈페이지 이용 시 처리되는 정보</h2>
+    <p>이 소개 홈페이지와 개인정보처리방침은 GitHub Pages에서 제공됩니다. 이 사이트에는 별도의 로그인, 광고 또는 방문 분석 코드를 넣지 않았습니다. 다만 호스팅 제공자인 GitHub는 보안 등의 목적으로 방문자의 IP 주소 등 접속 정보를 처리할 수 있습니다. 자세한 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고해주세요.</p>
+    <p>홈페이지는 앱에서 조회한 구글캘린더 일정을 표시하거나 수신하지 않습니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>개발·운영자: narangsh2<br>문의 이메일: <a href="mailto:narangsh2@gmail.com">narangsh2@gmail.com</a></p>
+    <p>문의 메일을 보내시면 회신을 위해 발신 이메일 주소와 문의 내용을 이메일 서비스에서 처리합니다. 문의에 캘린더 정보 등을 직접 포함하신 경우 그 내용도 전달됩니다. 문의 해결과 필요한 후속 대응을 위해 사용하고, 해당 목적이 종료되면 불필요한 문의 정보를 삭제합니다.</p>
+
+    <h2>8. 변경 안내</h2>
+    <p>앱의 데이터 처리 방식이 변경되면 이 페이지의 내용과 최종 수정일을 갱신합니다. 새로운 데이터 접근이나 권한이 필요한 경우 해당 기능 이용 전에 설명하고 필요한 동의를 받습니다.</p>
+    <p class="subtle"><a href="./">GooCalendar 홈페이지로 돌아가기</a></p>
+  </main>
+  <footer>GooCalendar · narangsh2</footer>
+</body>
+</html>

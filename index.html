@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GooCalendar는 구글캘린더 일정을 날짜별 목록으로 확인하고, 인터넷이 없을 때 마지막 저장 일정을 볼 수 있는 Android 앱입니다.">
+  <meta name="color-scheme" content="light">
+  <title>GooCalendar — 구글캘린더를 간결한 일정 목록으로</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#fafafb;color:#313843;font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Malgun Gothic",sans-serif}a{color:#665856;text-underline-offset:4px}a:hover{color:#ad6058}a:focus-visible{outline:3px solid #d7978c;outline-offset:5px}header,main,footer{width:min(880px,100% - 40px);margin:auto}header{padding:28px 0;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid #e6e8ec}.brand{font-size:21px;font-weight:650;letter-spacing:-.6px;color:#343940;text-decoration:none;white-space:nowrap}.brand:before{content:"";display:inline-block;width:10px;height:10px;background:#df8b7f;border-radius:50%;margin-right:10px}nav{font-size:14px}main{padding:64px 0 54px}.eyebrow{font-size:13px;letter-spacing:1.6px;color:#858b94;margin:0 0 12px}h1{font-size:clamp(29px,5vw,43px);letter-spacing:-1.5px;line-height:1.4;font-weight:650;margin:0 0 22px}.intro{max-width:650px;color:#747d89;font-size:17px;margin:0 0 36px}.tags{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px}.tags span{background:#f0f1f4;color:#707986;border-radius:7px;padding:5px 11px;font-size:13px}.panel{background:#fff;border:1px solid #e7e9ed;border-radius:16px;padding:28px;margin-bottom:22px}.panel h2{font-size:19px;letter-spacing:-.4px;margin:0 0 14px;font-weight:600}.panel p{color:#6c7582;margin:10px 0}.panel ul{padding-left:21px;margin:0;color:#6c7582}.panel li{padding:4px 0}.privacy{border-left:3px solid #dfa096;padding-left:20px;margin:34px 0;color:#6c7582}.contact{font-size:14px;color:#7e8792}footer{padding:23px 0 30px;border-top:1px solid #e6e8ec;font-size:13px;color:#9299a3;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}@media(max-width:480px){header,main,footer{width:calc(100% - 32px)}header{align-items:flex-start;flex-direction:column;gap:8px;padding:23px 0}main{padding-top:40px}.panel{padding:22px}.intro{font-size:16px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">GooCalendar</a><nav aria-label="사이트 메뉴"><a href="privacy.html">개인정보처리방침</a></nav></header>
+  <main>
+    <p class="eyebrow">ANDROID · GOOGLE CALENDAR</p>
+    <h1>날짜별로 모아 보는<br>나의 일정.</h1>
+    <p class="intro">GooCalendar는 구글캘린더에 등록한 일정을 간결한 세로 목록으로 보여주는 Android 앱입니다. 필요한 일정을 검색하고, 원하는 기간을 살펴보세요.</p>
+    <div class="tags" aria-label="주요 특징"><span>날짜별 목록</span><span>읽기 전용</span><span>마지막 일정 저장</span></div>
+    <section class="panel" aria-labelledby="features"><h2 id="features">필요한 일정에 집중하세요</h2><ul>
+      <li>구글 계정으로 연결한 캘린더의 일정을 날짜와 시간 순서로 표시합니다.</li>
+      <li>표시할 캘린더를 고르고 제목·장소·내용으로 일정을 검색할 수 있습니다.</li>
+      <li>30일·90일·1년 또는 시작일과 종료일을 직접 선택해 조회합니다.</li>
+      <li>이전 일정을 살펴보고, 상단 GooCalendar를 눌러 오늘 일정으로 돌아옵니다.</li>
+      <li>일정을 누르면 등록된 설명과 장소, 시간을 확인할 수 있습니다.</li>
+    </ul></section>
+    <section class="panel" aria-labelledby="connection"><h2 id="connection">구글캘린더와 직접 연결합니다</h2><p>Google의 권한 동의 화면에서 캘린더 읽기 권한을 허용하면 Google Calendar API를 통해 일정을 가져옵니다. 앱을 열거나 새로고침할 때 최신 일정을 조회합니다.</p><p>GooCalendar는 일정 조회와 표시에 사용하며, 구글캘린더의 일정을 생성·수정·삭제하지 않습니다. 접근 가능한 캘린더 목록과 일정 제목·시간·장소·설명을 읽어 앱의 기능을 제공합니다.</p></section>
+    <section class="panel" aria-labelledby="offline"><h2 id="offline">연결이 끊겨도 마지막 일정을</h2><p>정상적으로 불러온 마지막 일정은 앱 전용 기기 내부 공간에 저장됩니다. 인터넷에 연결되지 않거나 조회에 실패하면 저장본과 저장 시각을 표시합니다. 아직 저장하지 않은 기간은 인터넷 연결 후 조회해야 합니다.</p></section>
+    <div class="privacy"><p>일정 정보를 개발자의 별도 서버로 전송하거나 광고 목적으로 사용하지 않습니다. 앱의 데이터 접근·보관·삭제 방법은 <a href="privacy.html">개인정보처리방침</a>에서 확인하실 수 있습니다.</p></div>
+    <section class="panel" aria-labelledby="use"><h2 id="use">설치와 이용</h2><p>개인 및 직접 알고 지내는 지인을 위한 앱으로, 개발자가 Android 설치 파일(APK)을 직접 전달합니다. Android 8.0 이상과 Google Play 서비스, 최초 연결 시 인터넷이 필요합니다. 사용자는 본인의 구글 계정으로 권한에 동의해 사용합니다.</p><p>구글 계정의 조직 정책이나 앱의 현재 OAuth 게시 상태에 따라 계정 연결이 제한되거나 재승인이 필요할 수 있습니다.</p></section>
+    <p class="contact">개발·운영: narangsh2<br>문의: <a href="mailto:narangsh2@gmail.com">narangsh2@gmail.com</a></p>
+  </main>
+  <footer><span>GooCalendar · narangsh2</span><a href="privacy.html">개인정보처리방침</a></footer>
+</body>
+</html>
